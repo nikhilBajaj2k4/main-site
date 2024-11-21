@@ -1,0 +1,38 @@
+---
+const testimonials = [
+  {
+    name: "Henrik Andersson",
+    role: "Founder",
+    content: "Working with their team was exactly what we needed. They helped automate our website leads into HubSpot, and when we had questions about some custom fields, they jumped on a call to sort it out."
+  },
+  {
+    name: "Maria Lindström",
+    role: "Sales Director",
+    content: "Been working with them for about 8 months now. Started with just email automation but ended up redoing all our sales processes. Love how they keep checking in to make sure everything's running smoothly."
+  },
+  {
+    name: "Laurent Dubois",
+    role: "Operations Manager",
+    content: "Had a few hiccups initially with our complex setup, but the team stuck with us until everything was perfect. Now our departments actually talk to each other."
+  }
+];
+---
+
+<div id="testimonials" class="py-20">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+    <h2 class="text-center text-3xl font-bold text-gray-900 md:text-4xl mb-16">
+      What Our Clients Say
+    </h2>
+    <div class="grid md:grid-cols-3 gap-8">
+      {testimonials.map(testimonial => (
+        <div class="p-8 rounded-3xl bg-white shadow-xl">
+          <p class="text-gray-600">{testimonial.content}</p>
+          <div class="mt-6">
+            <p class="font-semibold text-gray-900">{testimonial.name}</p>
+            <p class="text-gray-600">{testimonial.role}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>

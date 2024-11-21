@@ -1,0 +1,46 @@
+---
+const features = [
+  {
+    title: "Lead Generation",
+    description: "Finding the right leads can be tough. We help you find leads using tools like Clay, N8N, and more.",
+    icon: "🎯"
+  },
+  {
+    title: "Infrastructure Setup",
+    description: "Trust our experienced team to lay the groundwork for effective cold outreach campaigns.",
+    icon: "⚙️"
+  },
+  {
+    title: "Integrations",
+    description: "From CRM to email marketing tools, we help you integrate the right tools to streamline your sales operations.",
+    icon: "🔄"
+  },
+  {
+    title: "Consultation",
+    description: "Get expert advice on optimizing your sales processes and automation workflows.",
+    icon: "💡"
+  }
+];
+---
+
+<div id="features" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 md:px-12 xl:px-6">
+    <div class="md:w-2/3 lg:w-1/2">
+      <h2 class="text-3xl font-bold text-gray-900 md:text-4xl">
+        Sales Operations Made Simple
+      </h2>
+      <p class="mt-4 text-gray-600">
+        From enhancing data enrichment to setting up outreach infrastructure, we handle it all.
+      </p>
+    </div>
+    <div class="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      {features.map(feature => (
+        <div class="relative p-8 rounded-3xl bg-white shadow-xl">
+          <div class="text-4xl mb-4">{feature.icon}</div>
+          <h3 class="text-xl font-semibold text-gray-900">{feature.title}</h3>
+          <p class="mt-4 text-gray-600">{feature.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</div>
